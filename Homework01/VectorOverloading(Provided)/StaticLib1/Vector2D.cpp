@@ -35,10 +35,82 @@ bool AlmostEqualRelative(double A, double B,
 
 
 bool Vector2D::operator==(const Vector2D& rhs) const {
-	double epsilon = 1E-5;
+	//double epsilon = 1E-5;
     return (AlmostEqualRelative(length(), rhs.length()));
 }
 
 bool Vector2D::operator!=(const Vector2D& rhs) const {
 	return !((*this) == rhs);
+}
+
+bool Vector2D::operator<(const Vector2D& rhs) const
+{
+	return (this->length() < rhs.length());
+}
+
+bool Vector2D::operator>(const Vector2D& rhs) const
+{
+	return (!(this->length() < rhs.length()));
+}
+
+bool Vector2D::operator<=(const Vector2D& rhs) const
+{
+	return (*this < rhs || *this == rhs);
+}
+
+bool Vector2D::operator>=(const Vector2D& rhs) const
+{
+	return (!(this->length() <= rhs.length()));
+}
+
+std::ostream& operator<<(std::ostream& os, const Vector2D& rhs)
+{
+	os << "(" << rhs._x << ", " << rhs._y << ")";
+	return os;
+}
+
+std::istream& operator>>(std::istream& is, Vector2D& rhs)
+{
+	char L;
+	is >> L >> rhs._x >> L >> rhs._y >> L;
+	return is;
+}
+
+Vector2D Vector2D::operator+(const Vector2D& rhs) const
+{
+	return Vector2D(_x+rhs._x, _y+rhs._y);
+}
+
+Vector2D& Vector2D::operator+=(const Vector2D& rhs)
+{
+	_x += rhs._x;
+	_y += rhs._y;
+	return *this;
+}
+
+Vector2D Vector2D::operator-(const Vector2D& rhs) const
+{
+	return Vector2D(_x + rhs._x, _y + rhs._y);
+}
+
+Vector2D& Vector2D::operator-=(const Vector2D& rhs)
+{
+	_x -= rhs._x;
+	_y -= rhs._y;
+	return *this;
+}
+
+Vector2D& Vector2D::operator++()
+{
+	++_x;
+	++_y;
+	return *this;
+}
+
+Vector2D Vector2D::operator++(int)
+{
+	Vector2D result(*this);
+	_x++;
+	_y++;
+	return result;
 }
