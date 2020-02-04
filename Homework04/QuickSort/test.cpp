@@ -25,3 +25,26 @@ TEST(TestCaseName, Testqsort02) {
 
 	ASSERT_EQ(expected, result);
 };
+
+//This test provided by Anastasia
+/*TEST(TestCaseName, TestQSortCallFunc03) {
+	srand((size_t)0);
+	int SIZE = 100;
+	std::vector<int> v;
+	v.reserve(SIZE);
+
+	for (int i = 0; i < SIZE; ++i) {
+		v.push_back(rand() % SIZE);
+	}
+
+	auto vResult = qsort(v);
+
+	bool isInOrder = true;
+	for (int i = 0; i < vResult.size() - 1; ++i) {
+		if (vResult[i] < vResult[i])
+			isInOrder = false;
+	}
+
+	ASSERT_EQ(vResult.size(), v.size());
+	ASSERT_TRUE(isInOrder);
+}*/
