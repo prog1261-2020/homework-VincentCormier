@@ -6,16 +6,22 @@
 #include "gtest/gtest.h"
 #include "QuickSort.h"
 
-TEST(TestCaseName, Testqsort01) {
+//TEST(TestCaseName, Testqsort01) {
+//
+//	std::vector<int> v{ 2,1 };
+//
+//	std::vector<int> result = qsort(v);
+//	std::vector<int> expected{ 1,2 };
+//	
+//	ASSERT_EQ(expected, result);
+//};
 
-	std::vector<int> v{ 1,4,7,6,2 };
-
-	qsort(v);
-
-};
-/*
 TEST(TestCaseName, Testqsort02) {
+
 	std::vector<int> v{ 1,4,7,6,2 };
 
-	qsort(v);
-}*/
+	std::vector<int> result = qsort(v);
+	std::vector<int> expected{ 1,2,4,6,7 };
+
+	ASSERT_EQ(expected, result);
+};

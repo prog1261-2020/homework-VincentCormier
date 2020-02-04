@@ -15,6 +15,7 @@ std::vector<int> qsort(const std::vector<int> v)
 	return awn;
 }
 
+//Helps Iterate through the vector, ordering it as we go, calling it self for the subsections
 void qsortHelp(const int i,const int j, std::vector<int>& v)
 {
 	int  temp = i;
@@ -24,13 +25,13 @@ void qsortHelp(const int i,const int j, std::vector<int>& v)
 				temp++;
 			}
 		}
-		std::swap(v[j], v[i + temp]);
-		for (int h = i; h < i + temp; h++) {
-			if (v[h] > v[i + temp]) {
+		std::swap(v[j], v[temp]);
+		for (int h = i; h < temp; h++) {
+			if (v[h] > v[temp]) {
 				bool swapped = false;
 				while (!swapped) {
-					int k = i + temp;
-					if (v[k] < v[i + temp]) {
+					int k = temp;
+					if (v[k] < v[temp]) {
 						std::swap(v[h], v[k]);
 						swapped = true;
 					}
@@ -40,8 +41,12 @@ void qsortHelp(const int i,const int j, std::vector<int>& v)
 					k++;
 				}
 			}
+		} 
+		if(i !=(temp - 1) && i != temp) {
+			qsortHelp(i, temp - 1, v);
 		}
-		qsortHelp(i, temp - 1, v);
-		qsortHelp(temp + 1, j, v);
+		if ((temp + 1) != i && i != temp) {
+			qsortHelp(temp + 1, j, v);
+		}
 	}
 }
