@@ -1,0 +1,29 @@
+Detecting Organic Molecules Elsewhere in the Universe
+
+ABSTRACT
+The detection of organic molecules elsewhere in the universe is a popular field of research. 
+The results of this research allow further understanding of how life on Earth came to be and if 
+it is possible for life to evolve similarly in other extraterrestrial environments. In this work, 
+I will discuss the history of organic molecules and how they gave birth to our life-forms, methods of detecting 
+extraterrestrial organic molecules and the conditions extraterrestrial environments have on the spontaneity of organic reactions. 
+
+INTRODUCTION
+	The universe, as we know it, is never ending and its size is truly unfathomable. Given this, to consider the 
+possibility of life elsewhere in our universe does not seem irrational. Ever since the idea of our planet and life-form being 
+unique was overthrown eons ago, there has been astronomers and philosophers aiming to find what is out there. The idea of finding 
+life elsewhere in the universe seems straight forward, but it is something that is easy in theory and practically impossible in reality. 
+The size of the universe is so overwhelming that it is hard to decide where to start our search for life. As technologies have advanced through 
+the ages, we have come to find ways of looking at our universe, be it through telescopes or other imaging instruments.  
+Astronomers and physicists still had an enormous challenge ahead, even with the amazing technologies they possessed. How can one discover something 
+potentially so small in the vastness of space? With billions and billions of possibilities, it would be impossible to find anything. Astronomers and 
+physicists had to find life by process of elimination. The kind of life they would then look for was that only similar to Earth’s. This meant that the 
+search for planets outside our solar system had to begin once the other habiting planets were ruled out. The analysis of life on Earth then had to take place. 
+They needed to understand as much as they could about how life on Earth works for all types of organisms. As a result, the three important factors for a planet 
+to have Earth-like life were determined to be: an energy source capable of sustaining life (our sun), a liquid medium (water and oceans) and chemical elements. 
+Life on Earth requires chemical elements, more specifically organic molecules. From the biggest animal to the smallest microorganism, we need organic molecules 
+and their reactions to survive. A simple example is photosynthesis. A purely organic reaction and in its absence, life would be scarce.
+There is no doubt that the other two factors are necessary to sustain life. It is a common fact that on Earth we need sunlight and water to live. In this paper, 
+the goal is to determine why, of the three, the presence of organic molecules and their detection elsewhere in the universe is so important. This work will include 
+topics such as the theories of the history of organic molecules on Earth, the methods used to detect these crucial prebiotic molecules and, briefly, the conditions 
+extraterrestrial environments have on the spontaneity of organic reactions.
+

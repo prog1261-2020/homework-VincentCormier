@@ -8,18 +8,13 @@
 #include <fstream>
 #include <cstdlib>
 
-
-
 int main() {
 
-
 	std::map<std::string, int>list;
-
 	std::fstream story;
-
 	std::string word;
 
-	story.open("fox.txt", std::ios::out | std::ios::in | std::ios::binary);
+	story.open("hannahtext.txt", std::ios::out | std::ios::in | std::ios::binary);
 
 	if (story.fail()) {
 		std::cerr << "Error Opening File" << std::endl;
@@ -27,7 +22,6 @@ int main() {
 	}
 
 	while (story >> word) {
-		
 		
 		for (int i = 0; i < word.size(); i++) {
 			int len = word.size();
@@ -40,18 +34,8 @@ int main() {
 			word[i] = tolower(word[i]);
 		}
 
-		if (list.count(word) == 0) {
-			list[word];
-			list[word]++;
-		}
-		else {
-			list[word]++;
-		}
-
+		list[word]++;
 	}
-
-
-
 
 	for (auto p : list) {
 		std::cout << "Word: " << p.first << " count : " << p.second << std::endl;
@@ -59,4 +43,3 @@ int main() {
 
 	story.close();
 }
-
